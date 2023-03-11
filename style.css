@@ -1,14 +1,15 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    background-color: rgb(7, 2, 2);
+    background-color: rgb(32, 8, 8);
     color: rgb(240,240,240);
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100vw;
     font-family: Verdana, Tahoma, sans-serif;
-}
+    background: linear-gradient(250deg, rgb(54, 19, 19), rgb(211, 93, 14));
+  }
 
 header {
     width: 95%;
@@ -24,6 +25,11 @@ header {
     height: 40px;
     border-radius: 20px;
     background-color: rgb(240,240,240);
+}
+
+.share-button svg{
+    margin: 7px 0 0 10px;
+    color: rgb(0,0,0,);
 }
 
 h1 {
@@ -48,9 +54,59 @@ a{
 .tile {
     width: 100%;
     height: 56px;
-    background-color: rgb(37,37,37);
+    background-color: rgb(77, 64, 64);
     margin: 7px;
     border-radius: 17px;
     display: flex;
     justify-content: space-between;
+}
+
+.tile:hover {
+    transition: cubic-bezier(.07,1.41,.82, 1.41) 0.2;
+    transform: scale(1.02);
+}
+
+.tile {
+    transition: cubic-bezier(.07,1.41,.82,1.41) 0.2s;
+}
+
+.tile:hover {
+    transform: scale(1.02);
+}
+
+.tile:hover {
+    transition: cubic-bezier(0.4, 0, 0.2, 1.2) 0.3s;
+}
+
+.tile:not(:hover) {
+    transform: scale(0.98);
+}
+
+
+.tile-share-button{
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(189, 48, 48);
+}
+.image-container{
+    height: 96px;
+    width: 96px;
+    border-radius: 48px;
+    overflow: hidden;
+}
+
+.image-container img {
+    height: 100%;
+}
+
+.icon{
+    margin: 7px 10px;
+    width: 44px;
+    height:44px;
+}
+
+.share-button-tile{
+    margin: 7px 0 0 10px
 }
