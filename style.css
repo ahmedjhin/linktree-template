@@ -1,112 +1,99 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(32, 8, 8);
-    color: rgb(240,240,240);
+    background: linear-gradient(250deg, rgb(30, 28, 33), rgb(86, 48, 111));
+    color: rgb(240, 240, 240);
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100vw;
     font-family: Verdana, Tahoma, sans-serif;
-    background: linear-gradient(250deg, rgb(54, 19, 19), rgb(211, 93, 14));
   }
-
-header {
+  
+  header {
     width: 95%;
     max-width: 788px;
     display: flex;
     justify-content: flex-end;
     padding: 12px;
     margin-top: 15px;
-}
-
-.share-button {
+  }
+  
+  .share-button {
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-color: rgb(240,240,240);
-}
-
-.share-button svg{
+    background-color: rgb(235, 167, 33);
+  }
+  
+  .share-button svg {
     margin: 7px 0 0 10px;
-    color: rgb(0,0,0,);
-}
-
-h1 {
+    color: rgb(50, 50, 50);
+  }
+  
+  h1 {
     font-size: 20px;
     margin-bottom: 30px;
-}
-
-a{
-   text-decoration: none;
-   color: rgb(240,240,240); 
-}
-
-.container {
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+  }
+  
+  .container {
     width: 91%;
-    max-width: 688;
+    max-width: 688px;
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.tile {
+  }
+  
+  .tile {
     width: 100%;
     height: 56px;
-    background-color: rgb(77, 64, 64);
+    background-color: rgb(65, 57, 73);
     margin: 7px;
     border-radius: 17px;
     display: flex;
     justify-content: space-between;
-}
-
-.tile:hover {
-    transition: cubic-bezier(.07,1.41,.82, 1.41) 0.2;
-    transform: scale(1.02);
-}
-
-.tile {
-    transition: cubic-bezier(.07,1.41,.82,1.41) 0.2s;
-}
-
-.tile:hover {
-    transform: scale(1.02);
-}
-
-.tile:hover {
     transition: cubic-bezier(0.4, 0, 0.2, 1.2) 0.3s;
-}
-
-.tile:not(:hover) {
+  }
+  
+  .tile:hover {
+    transform: scale(1.02);
+  }
+  
+  .tile:not(:hover) {
     transform: scale(0.98);
-}
-
-
-.tile-share-button{
+  }
+  
+  .tile-share-button {
     margin: 10px;
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-color: rgb(189, 48, 48);
-}
-.image-container{
+    background-color: rgb(235, 167, 33);
+  }
+  
+  .image-container {
     height: 96px;
     width: 96px;
     border-radius: 48px;
     overflow: hidden;
-}
-
-.image-container img {
+  }
+  
+  .image-container img {
     height: 100%;
-}
-
-.icon{
+  }
+  
+  .icon {
     margin: 7px 10px;
     width: 44px;
-    height:44px;
-}
-
-.share-button-tile{
-    margin: 7px 0 0 10px
-}
+    height: 44px;
+  }
+  
+  .share-button-tile {
+    margin: 7px 0 0 10px;
+  }
